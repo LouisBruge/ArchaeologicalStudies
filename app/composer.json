@@ -1,0 +1,14 @@
+{
+    "name": "louisbruge/archaeologicalstudies",
+    "description": "Website for archaeological studies in France",
+    "type": "project",
+    "require": {
+        "twbs/bootstrap": "^3.3"
+    },
+    "authors": [
+        {
+            "name": "louis.bruge",
+            "email": "louis.bruge@gmail.com"
+        }
+    ]
+}
