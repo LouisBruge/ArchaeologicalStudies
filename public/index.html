@@ -3,25 +3,28 @@
     <head>
         <title> INDEX </title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="" type="text/css" media="screen" />
+        <link rel="stylesheet" href="../app/vendor/twbs/bootstrap/dist/css/bootstrap.css" type="text/css" media="screen" />
     </head>
     <body>
         <header>
-            <h1> 
-                <a href="/index.html" >Archaeological Studies</a> 
+            <h1 class="text-center" > 
+                <a href="index.html" >Archaeological Studies</a> 
             </h1>
         </header>
 
         <!-- Menu of navigation -->
         <nav>
-            <ul>
+	    <div class="nav nav-pills">
+            <ul class="list-inline">
+		<li class="active"> Home </li>
                 <li> Archaeological site</li>
                 <li> Professionnal of Archaeology</li>
                 <li> Library</li>
             </ul>
+	    </div>
         </nav>
         <main>
-            <div id="disclaimer">
+            <div id="disclaimer" class="container text-justify">
                     <p>
                         Welcome to the <em> Historical Studies </em>! <br />
                         Here, you will find the list of french archaeological professionnals, with the main prehistorcal site, among the thousand and thousand sites in France! 
@@ -33,22 +36,24 @@
 
         <!-- Footer with the copyright, contact and about sections -->
         <footer>
-            <div>
+	    <div class="container">
+            <div class="col-md-4">
                 <p>
                     c 2018 wild Code School 
                 </p>
             </div>
             <div>
-            <div>
+            <div class="col-md-4">
                 <p>
                     <a href="" > Contact's form</a>
                 </p>
             </div>
-            <div>
+            <div class="col-md-4">
                 <p>
-                    <a href="" > About US </a>
+                    <a href="aboutUs.html" > About US </a>
                 </p>
             </div>
+	    </div>
         </footer>
     </body>
 
