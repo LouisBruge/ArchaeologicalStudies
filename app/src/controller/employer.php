@@ -23,6 +23,8 @@ class employer
     {
         $this->hydrate($data);
     }
+
+    use app\src\helper\hydrate;
     
     /*
      *  --- ACCESOR --- 
@@ -73,85 +75,85 @@ class employer
 
     /*
      *
-     * GETTER
+     * setTER
      *
      */
 
     /**
-     * getId
+     * setId
      *
-     * get id for employer class
+     * set id for employer class
      *
      * @param int id
      *
      * @return void
      */
-    public function getId(int $id) {
+    public function setId(int $id) {
         $this->_id = $id;
     }
 
     /**
-     * getName
+     * setName
      *
-     * get name for employer class
+     * set name for employer class
      *
      * @param string name
      *
      * @return void
      */
-    public function getName(string $name) {
+    public function setName(string $name) {
         $this->_name = $name;
     }
 
     /**
-     * getAbrev
+     * setAbrev
      *
-     * get abrev for employer class
+     * set abrev for employer class
      *
      *  @param string abrev
      *
      *  @return void
      */
-    public function getAbrev(string $abrev) {
+    public function setAbrev(string $abrev) {
         $this->_abrev = $abrev;
     }
 
     /** 
-     * getStatus
+     * setStatus
      *
-     * get status for employer class
+     * set status for employer class
      *
      * @param string status
      *
      *  @return void
      */
-    public function getStatus(string $status) {
+    public function setStatus(string $status) {
         $this->_status = $status;
     }
 
     /**
-     * getSiren
+     * setSiren
      *
-     * get SIREN for employer class
+     * set SIREN for employer class
      *
      * @param int siren
      *
      * @return void
      */
-    public function getSiren(int $siren) {
+    public function setSiren(int $siren) {
         $this->_siren = $siren;
     }
 
     /**
-     * getSiret
+     * setSiret
      *
-     * get SIRET for employer class
+     * set SIRET for employer class
      *
      * @param int siret
      *
      * @return void
      */
-    public function getSiret(int $siret) {
+    public function setSiret(int $siret) {
         $this->_siret = $siren;
     }
 
