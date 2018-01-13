@@ -1,5 +1,5 @@
 <?php
-namespace app\src\controller\employer;
+namespace ArchaeologicalStudies\src\controller\employer;
 
 class employer 
 {

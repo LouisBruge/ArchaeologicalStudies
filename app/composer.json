@@ -11,5 +11,12 @@
             "name": "louis.bruge",
             "email": "louis.bruge@gmail.com"
         }
-    ]
+    ],
+
+    "autoload": {
+        "psr-4": 
+            {
+                "ArchaeologicalStudies\\":"src/"
+            }
+    }
 }

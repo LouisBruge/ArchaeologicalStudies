@@ -1,5 +1,5 @@
 <?php
-namespace app\src\helper;
+namespace ArchaeologicalStudies\src\helper;
 trait hydrate
 {
     /**
