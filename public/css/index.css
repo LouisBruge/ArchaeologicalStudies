@@ -1,0 +1,39 @@
+/* 
+ * Mains sections
+ */
+h1
+{
+    color-font: "black";
+    background-color: black;
+    display: none;
+}
+
+p
+{
+    word-break: hypermate;
+}
+
+footer
+{
+    background-color: black;
+    position: relative;
+}
+
+/*
+ * Set background for the main page
+ */
+
+body
+{
+    background-color: lightgrey;
+}
+
+/*
+ * Set darkgrey background for the blockquote
+ */
+
+blockquote
+{
+    background-color: grey;
+    border: 1px solid grey;
+}
