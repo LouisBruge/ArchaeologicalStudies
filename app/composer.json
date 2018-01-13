@@ -3,7 +3,8 @@
     "description": "Website for archaeological studies in France",
     "type": "project",
     "require": {
-        "twbs/bootstrap": "^3.3"
+        "twbs/bootstrap": "^3.3",
+        "components/jquery": "^3.2"
     },
     "authors": [
         {
