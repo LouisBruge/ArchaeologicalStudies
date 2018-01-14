@@ -1,5 +1,5 @@
 <?php
-namespace ArchaeologicalStudies\src\controller\employer;
+namespace ArchaeologicalStudies\src\controller;
 
 class employer 
 {
@@ -24,7 +24,7 @@ class employer
         $this->hydrate($data);
     }
 
-    use app\src\helper\hydrate;
+    use ArchaeologicalStudies\src\helper\hydrate;
     
     /*
      *  --- ACCESOR --- 
@@ -75,7 +75,7 @@ class employer
 
     /*
      *
-     * setTER
+     * --- MUTATORS ---
      *
      */
 
