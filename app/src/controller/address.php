@@ -1,9 +1,32 @@
 <?php
 
+/**
+ *
+ * Class address
+ *
+ * generate address object
+ *
+ * @author louis bruge <louis.bruge@gmail.com>
+ *
+ * @version 1.0.0
+ */
+
 namespace ArchaeologicalStudies\src\controller;
 
 class address
 {
+
+    /**
+     * @var int $_id
+     * @var string $_street the numero and the name of the street
+     * @var string $_complement_street not necessery if not exist
+     * @var int $_postal_code 
+     * @var string $_city
+     * @var int $_cedex
+     * @var int $_employer reference to the id of the employer's table
+     *
+     */
+
     private $_id,
         $_street,
         $_complement_street,
@@ -17,25 +40,32 @@ class address
      *
      * function to hydrate address class
      *
-     * @param array data
+     * @param array $data
      *
      * @return void
      */
+
     public function __construct(array $data)
     {
         $this->hydrate($data);
     }
 
+    /**
+    *
+    * @param array $data
+    *
+    * @return void
+    */
     use ArchaeologicalStudies\src\helper\hydrate;
 
-    /* 
+    /*
      * --- ACCESORS ---
      */
 
     /**
      * id
      *
-     * @return int id
+     * @return int $_id
      */
     public function id()
     {
@@ -45,7 +75,7 @@ class address
     /**
      * street
      *
-     * @return string street
+     * @return string $_street
      */
     public function street()
     {
@@ -55,7 +85,7 @@ class address
     /**
      * complement_street
      *
-     * @return string complement_street
+     * @return string $_complement_street
      */
     public function complement_street()
     {
@@ -65,7 +95,7 @@ class address
     /**
      * postal_code
      *
-     * @return int postal_code
+     * @return int $_postal_code
      */
 
     public function postal_code()
@@ -76,7 +106,7 @@ class address
     /**
      * city
      *
-     * @return string city
+     * @return string $_city
      */
 
     public function city()
@@ -87,7 +117,7 @@ class address
     /**
      * cedex
      *
-     * @return int cedex
+     * @return int $_cedex
      */
 
     public function cedex()
@@ -98,7 +128,7 @@ class address
     /**
      * employer
      *
-     * @return int employer
+     * @return int $_employer
      */
 
     public function employer()
@@ -116,7 +146,7 @@ class address
      *
      * setId
      *
-     * @param int id
+     * @param int $id
      *
      * @return void
      */
@@ -129,7 +159,7 @@ class address
     /**
      * setStreet
      *
-     * @param string street
+     * @param string $street
      *
      * @return void
      */
@@ -143,7 +173,7 @@ class address
      *
      * setComplement_street
      *
-     * @param string complement_street
+     * @param string $complement_street
      *
      * @return void
      */
@@ -156,7 +186,7 @@ class address
     /**
      * setPostal_code
      *
-     * @param int postal_code
+     * @param int $postal_code
      *
      * @return void
      */
@@ -169,7 +199,7 @@ class address
     /**
      * setCity
      *
-     * @param string city
+     * @param string $city
      *
      * @return void
      */
@@ -182,7 +212,7 @@ class address
     /**
      * setCedex
      *
-     * @param int cedex
+     * @param int $cedex
      *
      * @return void
      */
@@ -196,7 +226,7 @@ class address
      *
      * setEmployer
      *
-     * @param int employer
+     * @param int $employer
      *  @return void
      */
 

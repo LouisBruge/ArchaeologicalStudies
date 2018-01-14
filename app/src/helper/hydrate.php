@@ -1,5 +1,13 @@
 <?php
 namespace ArchaeologicalStudies\src\helper;
+
+/**
+ * trait hydrate
+ *
+ * @author louis bruge <louis.bruge@gmail.com>
+ * @version 1.0.0
+ */
+
 trait hydrate
 {
     /**
@@ -19,6 +27,7 @@ trait hydrate
     {
         foreach($data as $key => $value) 
         {
+            /* modified $key string into a method by add set and uppercase the first letter */
             $method = 'set' . ucfirst($key);
             if (method_exists($this, $method))
             {

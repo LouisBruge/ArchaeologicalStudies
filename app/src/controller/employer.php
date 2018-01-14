@@ -1,8 +1,27 @@
 <?php
+
+/**
+ * Class employer
+ *
+ * generate employer class 
+ *
+ * @author louis bruge <louis.bruge@gmail.com>
+ *
+ * @version 1.0.0
+ */
+
 namespace ArchaeologicalStudies\src\controller;
 
 class employer 
 {
+    /**
+     * @var int $_id 
+     * @var string $_name the name of the employer
+     * @var string $_abrev
+     * @var string $_status the juridic status of the employer
+     * @var int $_siren the SIREN numero
+     * @var int $_siret the SIRET numero
+     */
     private $_id,
         $_name,
         $_abrev,
@@ -32,42 +51,42 @@ class employer
      */
 
     /*
-     * @return int id
+     * @return int $_id
      */
     public function id() {
         return $this->_id;
     }
 
     /*
-     * @return name string
+     * @return string $_name
      */
     public function name() {
         return $this->_name;
     }
 
     /*
-     * @return abrev string
+     * @return string $_abrev
      */
     public function abrev() {
         return $this->_abrev;
     }
 
     /*
-     * @return status string
+     * @return string $_status
      */
     public function status() {
         return $this->_status;
     }
 
     /*
-     * @return int SIREN
+     * @return int $_SIREN
      */
     public function siren() {
         return $this->_siren;
     }
 
     /*
-     * @return int SIRET
+     * @return int $_SIRET
      */
     public function siret() {
         return $this->_siret;
@@ -84,7 +103,7 @@ class employer
      *
      * set id for employer class
      *
-     * @param int id
+     * @param int $id
      *
      * @return void
      */
@@ -97,7 +116,7 @@ class employer
      *
      * set name for employer class
      *
-     * @param string name
+     * @param string $name
      *
      * @return void
      */
@@ -110,7 +129,7 @@ class employer
      *
      * set abrev for employer class
      *
-     *  @param string abrev
+     *  @param string $abrev
      *
      *  @return void
      */
@@ -123,7 +142,7 @@ class employer
      *
      * set status for employer class
      *
-     * @param string status
+     * @param string $status
      *
      *  @return void
      */
@@ -136,7 +155,7 @@ class employer
      *
      * set SIREN for employer class
      *
-     * @param int siren
+     * @param int $siren
      *
      * @return void
      */
@@ -149,7 +168,7 @@ class employer
      *
      * set SIRET for employer class
      *
-     * @param int siret
+     * @param int $siret
      *
      * @return void
      */
