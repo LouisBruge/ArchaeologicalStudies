@@ -29,14 +29,6 @@ body
 }
 
 /**
- * Fix opacity of the nav-bar to 0.5
- */
-.nav
-{
-    opacity: 0.8;
-}
-
-/**
  * Contenu 
  */
 #contenu div
@@ -48,33 +40,13 @@ body
 }
 
 
-
 /*
  * Legend of the disclaimer's fig
  */
-
 figcaption
 {
     display: block;
     text-align: right;
-    position: relative;
-    top : -20px;
-    background-color: black;
-    opacity: 0.6;
-}
-
-/**
- * increase marge between contenu div
- */
-@media all and (max-width: 768px){
-    #contenu div
-    {
-        margin: 5px 0;
-    }
-
-    #slogan
-    {
-        display: none;
-    }
+    top : 14px;
 
 }
