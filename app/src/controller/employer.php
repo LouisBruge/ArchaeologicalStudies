@@ -43,7 +43,7 @@ class employer
         $this->hydrate($data);
     }
 
-    use ArchaeologicalStudies\helper\hydrate;
+    use \ArchaeologicalStudies\helper\hydrate;
     
     /*
      *  --- ACCESOR --- 
