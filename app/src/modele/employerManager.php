@@ -10,11 +10,11 @@
  * @version 1.0.0
  */
 
-namespace ArchaeologicalStudies\src\modele;
+namespace ArchaeologicalStudies\modele;
 
 use \PDO;
 
-use ArchaeologicalStudies\src\controller\employer;
+use ArchaeologicalStudies\controller\employer;
 
 class employerManager
 {

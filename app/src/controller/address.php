@@ -11,7 +11,7 @@
  * @version 1.0.0
  */
 
-namespace ArchaeologicalStudies\src\controller;
+namespace ArchaeologicalStudies\controller;
 
 class address
 {
@@ -56,7 +56,7 @@ class address
     *
     * @return void
     */
-    use ArchaeologicalStudies\src\helper\hydrate;
+    use ArchaeologicalStudies\helper\hydrate;
 
     /*
      * --- ACCESORS ---

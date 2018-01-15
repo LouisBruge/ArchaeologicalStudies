@@ -10,7 +10,7 @@
  * @version 1.0.0
  */
 
-namespace ArchaeologicalStudies\src\controller;
+namespace ArchaeologicalStudies\controller;
 
 class employer 
 {
@@ -43,7 +43,7 @@ class employer
         $this->hydrate($data);
     }
 
-    use ArchaeologicalStudies\src\helper\hydrate;
+    use ArchaeologicalStudies\helper\hydrate;
     
     /*
      *  --- ACCESOR --- 
