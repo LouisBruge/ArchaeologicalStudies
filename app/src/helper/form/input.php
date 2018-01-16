@@ -7,12 +7,12 @@
 *
 * @author louis bruge <louis.bruge@gmail.com>
 *
-* @version 1.0.0
+* @version 1.4.0
  */
 
 namespace ArchaeologicalStudies\helper\form;
 
-class input
+class input extends fieldform
 {
     /**
      *
@@ -31,7 +31,6 @@ class input
     protected $_type = "text",
         $_value = NULL,
         $_label = NULL,
-        $_name = NULL,
         $_size = 50,
         $_required = False;
 
@@ -64,7 +63,7 @@ class input
      * @param string $type
      *
      */
-    public function set($type)
+    public function setType($type)
     {
         $this->_type = $type;
     }
@@ -93,19 +92,6 @@ class input
     public function setLabel($label)
     {
         $this->_label = $label;
-    }
-
-    /**
-     *
-     * setName
-     *
-     * @param string $name
-     *
-     * @return void
-     */
-    public function setName($name)
-    {
-        $this->_name = $name;
     }
 
     /**
@@ -142,12 +128,9 @@ class input
      *
      * @return string form field
      */
-    public function field()
+    public function build()
     {
-        return "<input type=\"{$this->_type}\" name=\"{$this->_name}\" label=\"{$this->_label}\" size=\"{$this->_size}\" value=\"{$this->_value}\">";
+        return "<label for=\"{$this->_name}\"> </label> " . self::spacer() . " <input type=\"{$this->_type}\" name=\"{$this->_name}\" placeholder=\"{$this->_placeholder}\" label=\"{$this->_label}\" size=\"{$this->_size}\" value=\"{$this->_value}\">" . self::spacer();
     }
-
-
-
 }
 ?>
