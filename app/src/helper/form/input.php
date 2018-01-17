@@ -114,7 +114,7 @@ class input extends fieldform
      */
     public function build()
     {
-        return "<label for=\"{$this->_name}\"> </label> " . self::spacer() . " <input type=\"{$this->_type}\" id=\"{$this->_name}\" name=\"{$this->_name}\" placeholder=\"{$this->_placeholder}\" label=\"{$this->_label}\" size=\"{$this->_size}\" value=\"{$this->_value}\">" . self::spacer();
+        return "<label for=\"{$this->_name}\"> {$this->_placeholder} :</label> " . self::spacer() . " <input type=\"{$this->_type}\" id=\"{$this->_name}\" name=\"{$this->_name}\" placeholder=\"{$this->_placeholder}\" label=\"{$this->_label}\" size=\"{$this->_size}\" value=\"{$this->_value}\">" . self::spacer();
     }
 }
 ?>

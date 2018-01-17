@@ -62,7 +62,7 @@ class textarea extends fieldform
 
     public function build()
     {
-        return "<label for=\"{$this->_name}\"></label> <br /> <textarea name=\"{$this->_name}\" placeholder=\"{$this->_placeholder}\" maxlength=\"{$this->_maxlength}\" cols=\"{$this->_cols}\" rows=\"{$this->_rows}\" wrap=\"{$this->_wrap}\"> {$this->_value} </textarea>";
+        return "<label for=\"{$this->_name}\"> {$this->_placeholder} :</label> <br /> <textarea name=\"{$this->_name}\" placeholder=\"{$this->_placeholder}\" maxlength=\"{$this->_maxlength}\" cols=\"{$this->_cols}\" rows=\"{$this->_rows}\" wrap=\"{$this->_wrap}\"> {$this->_value} </textarea>";
     }
 }
 ?>
