@@ -18,8 +18,6 @@ class input extends fieldform
      *
      * @var string $_type
      *
-     * @var string $_value
-     *
      * @var string $_label
      *
      * @var string $_name
@@ -29,7 +27,6 @@ class input extends fieldform
      * @var bool $_required
      */
     protected $_type = "text",
-        $_value = NULL,
         $_label = NULL,
         $_size = 50,
         $_required = False;
@@ -68,20 +65,7 @@ class input extends fieldform
         $this->_type = $type;
     }
 
-    /**
-     *
-     * setValue
-     *
-     * @param string $value
-     *
-     * @return void
-     */
-    public function setValue($value)
-    {
-        $this->_value = $value;
-    }
-
-    /**
+     /**
      *
      * setLabel
      *

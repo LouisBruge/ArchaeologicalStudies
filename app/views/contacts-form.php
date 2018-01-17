@@ -1,5 +1,5 @@
 <?php 
-require(__DIR__ . '/../../../vendor/autoload.php');
+require(__DIR__ . '/../vendor/autoload.php');
 
 use ArchaeologicalStudies\helper\form\textarea;
 use ArchaeologicalStudies\helper\form\input;
@@ -13,8 +13,6 @@ $mail = new input(array (
     "label" => "E.mail"
 ));
 
-echo $mail->build();
-
 $subject = new input(array (
     'name' => "subject",
     "type" => "text",
@@ -23,13 +21,22 @@ $subject = new input(array (
     "label" => "Subject"
 ));
 
-echo $subject->build();
-
-
 $corpus = new textarea(array (
     "name" => "louisfqdfqf",
-    "placeholder" => "Namespace"
+    "placeholder" => "Namespace",
+    "value" => "Write your message here!"
 ));
 
+$submit = new input(array (
+    "name" => "submit",
+    "type" => "submit",
+    "value" => "Submit"
+));
+
+echo '<p>';
+echo $mail->build();
+echo $subject->build();
 echo $corpus->build();
+echo $submit->build();
+echo '</p>';
 ?>

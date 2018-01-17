@@ -28,6 +28,8 @@ abstract class fieldform
      * @var boolean $_readonly
      *
      * @var int $_maxlength
+     *
+     * @var string $_value
      */
 
     public $_name,
@@ -35,7 +37,8 @@ abstract class fieldform
         $_form,
         $_autofocus = False,
         $_readonly = False,
-        $_maxlength = 250;
+        $_maxlength = 250,
+        $_value = NULL;
 
     use \ArchaeologicalStudies\helper\hydrate;
 
@@ -91,6 +94,20 @@ abstract class fieldform
     {
         $this->_maxlength = $maxlength;
     }
+
+    /**
+     *
+     * setValue
+     *
+     * @param string $value
+     *
+     * @return void
+     */
+    public function setValue($value)
+    {
+        $this->_value = $value;
+    }
+
 
     /**
      *
