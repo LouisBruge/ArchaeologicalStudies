@@ -4,13 +4,7 @@ require(__DIR__ . '/../../../vendor/autoload.php');
 use ArchaeologicalStudies\helper\form\textarea;
 use ArchaeologicalStudies\helper\form\input;
 
-$corpus = new textarea(array (
-    "name" => "louisfqdfqf",
-    "placeholder" => "Namespace"
-));
-
-echo $corpus->build();
-
+// form of contacts
 $mail = new input(array (
     "name" => "mail",
     "type" => "mail",
@@ -21,4 +15,21 @@ $mail = new input(array (
 
 echo $mail->build();
 
+$subject = new input(array (
+    'name' => "subject",
+    "type" => "text",
+    "placeholder" => "subject",
+    "value" => "Reclamation",
+    "label" => "Subject"
+));
+
+echo $subject->build();
+
+
+$corpus = new textarea(array (
+    "name" => "louisfqdfqf",
+    "placeholder" => "Namespace"
+));
+
+echo $corpus->build();
 ?>

@@ -7,16 +7,16 @@
  *
  * @author louis bruge <louis.bruge@gmail.com>
  *
- * @version 1.0.1
+ * @version 1.0.2
  */
 
 namespace ArchaeologicalStudies\helper\form;
 
 class textarea extends fieldform
 {
-    public $_cols = 40,
-        $_rows = 40,
-        $_wrap = "soft";
+    public $_cols = 50,
+        $_rows = 3,
+        $_wrap = "hard";
 
     /**
      *
@@ -62,7 +62,7 @@ class textarea extends fieldform
 
     public function build()
     {
-        return "<textarea name=\"{$this->_name}\" placeholder=\"{$this->_placeholder}\" maxlength=\"{$this->_maxlength}\"> </textarea>";
+        return "<label for=\"{$this->_name}\"></label> <br /> <textarea name=\"{$this->_name}\" placeholder=\"{$this->_placeholder}\" maxlength=\"{$this->_maxlength}\" cols=\"{$this->_cols}\" rows=\"{$this->_rows}\" wrap=\"{$this->_wrap}\"> </textarea>";
     }
 }
 ?>
